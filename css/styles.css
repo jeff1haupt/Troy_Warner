@@ -1,0 +1,235 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quattrocento', serif;
+  font-size: 16px;
+  background-color: navy;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, ul {
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  border-bottom: 5px solid #fccc46;
+  margin: 0;
+  padding: 1em 0;
+  text-align:center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.6em;
+}
+
+.logoImage {
+  width: 120px;
+  display: inline-block;
+  position: absolute;
+  opacity: .9;
+  transform: rotate(-10deg);
+  left: 15px;
+}
+
+
+
+.star {
+  color: firebrick;
+}
+
+.logoDesign {
+  color: #fccc46;
+}
+
+
+
+.main-nav {
+  list-style-type: none;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+.main-nav li {
+  text-transform: uppercase;
+  padding: 0.4em .7em;
+  color: #fff;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav li a:hover {
+  border-top: 3px solid #fccc46;
+  color: #fccc46;
+}
+
+.sectionTitle {
+  max-width: 300px;
+  border-bottom: 3px solid #fff;
+  margin: 1em auto;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: .6em;
+}
+
+.textHolder {
+  padding-bottom: 2em;
+}
+
+.textHolder p {
+  width: 80%;
+  margin: 1em auto;
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility;
+}
+
+.images {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.whyRunning,
+.workExperience,
+.family {
+  width: 100%;
+  border-bottom: 5px solid #fccc46;
+  border-top: 5px solid #fccc46;
+  margin: 0;
+}
+
+
+footer {
+  min-height: 200px;
+  border-top: 5px solid #fccc46;
+}
+
+footer p {
+  margin: 1em auto;
+  text-align: center;
+  max-width: 500px;
+  padding: 0 1em 1em;
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility;
+}
+
+.legal {
+  font-size: 11px !important;
+  text-align: center;
+}
+
+.footerUl {
+  width: 350px;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.footerUl img {
+  padding: 1em;
+}
+
+.bodylinks {
+  color: #fccc46;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bodylinks:visited {
+  color: #fccc46;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bodylinks:hover {
+  background-color: #fccc46;
+  color: #fff;
+  font-weight: bold;
+}
+
+/****************MEDIA QUERIES*********************/
+
+@media screen and (min-width: 780px) {
+
+  .main-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-nav li {
+    padding: 1.3em .7em;
+  }
+
+}
+
+@media screen and (min-width: 1036px) {
+
+    .main-header {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+
+  	.main-nav {
+  		display: flex;
+      justify-content: flex-end;
+      align-items: baseline;
+  	}
+
+    .main-nav li {
+      padding: 1.3em .7em;
+    }
+
+    .imageHolder {
+      display: flex;
+      align-items: center;
+      flex-basis: 50%;
+    }
+
+
+    .textHolder {
+      flex-basis: 50%;
+    }
+
+    .whyRunning,
+    .workExperience,
+    .family {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+    }
+
+
+    .order1 {
+      order: 1;
+    }
+
+    .order2 {
+      order: 2;
+      border-left: 10px solid #fccc46;
+    }
+
+    .imageBorder {
+        border-right: 10px solid #fccc46;
+    }
+
+}
